@@ -80,9 +80,7 @@ class _ShakState extends State<Shak> {
                 ),
                 onPressed: () {
                   setState(() {
-                    userAccelerometerEvents.listen((UserAccelerometerEvent y) {
-                      print(y);
-                    });
+                    inputField = 0;
                   });
                 },
               ),
