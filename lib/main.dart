@@ -110,13 +110,13 @@ class _ShakState extends State<Shak> {
     _streamSubscriptions
         .add(userAccelerometerEvents.listen((UserAccelerometerEvent event) {
       setState(() {
-        if(event.y.abs()>2 && added==false){
+        if(userAcc>2 && added==false){
           inputField++;
           added = true;
-        }else if(event.y.abs()<1 && added==true){
+        }else if(userAcc<1 && added==true){
           added = false;
         }
-        userAcc = event.y.abs();
+        userAcc = event.y;
       });
     }));
   }
