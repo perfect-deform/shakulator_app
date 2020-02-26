@@ -10,7 +10,7 @@ class Shak extends StatefulWidget {
   _ShakState createState() => _ShakState();
 }
 
-//12
+//1212387
 
 class _ShakState extends State<Shak> {
   double userAcc = 0;
